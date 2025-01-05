@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  flex-direction:column;
 }
 
 img {
@@ -23,4 +25,44 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* changes for the exercise */
+
+.left-links, .right-links {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:15px;
+  padding: 15px;
+}
+
+a {
+  text-decoration:none;
+  color:grey;
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display:flex;
+  justify-content: space-between;
+  background-color:#eeeeee;
+}
+
+.content {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap:15px;
+  flex:1;
+}
+
+button {
+  padding: 8px;
 }
